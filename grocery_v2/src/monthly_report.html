@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @page {
+            margin: 15px;
+        }
+        
+        body {
+            font-size: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #a0c8f0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Monthly Shopping Report</h2>
+    <p>Hello, {{ username }}!</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Order Total</th>
+                <th style="width: 80px;">Order Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for details in product_details %}
+            <tr>
+                <td>{{ details[0] }}</td>
+                <td>{{ details[1] }}</td>
+                <td>{{ details[2] }}</td>
+                <td>{{ details[3] }}</td>
+                <td style="width: 80px;">{{ details[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

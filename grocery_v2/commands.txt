@@ -1,0 +1,19 @@
+##### For frontend: run first cmd if node modules are not there
+
+# To install node modules : npm install
+
+# To run the vue application: npm run dev
+
+###### For backend: run in sequence
+
+# Path to the project folder: cd /mnt/c/Users/HP/OneDrive/Documents/mad2
+
+# To run redis server: redis-server
+
+# To run the application: python3 main.py
+
+# To run jobs: mailhog
+
+# To start the celery worker: celery -A main.celery worker -l info
+
+# To start the celery beat: celery -A main.celery beat --max-interval 1 -l info
